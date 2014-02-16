@@ -1,4 +1,5 @@
 -module(ten).
--export([count]).
+-export([count/1]).
 
-count -> io:fwrite("testing~n");
+count(N) ->
+  io:write(N).
