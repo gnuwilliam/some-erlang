@@ -2,4 +2,5 @@
 -export([count/1]).
 
 % returns the length of a string
-count(Word) -> string:len(Word).
+count(Word) ->
+  string:words(Word).
