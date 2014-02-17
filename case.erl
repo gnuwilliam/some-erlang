@@ -5,4 +5,7 @@ case Animal of
   "cat" -> thundercat
 end
 
-io:write(Animal).
+case Animal of
+  "elephant"  -> elephant;
+  _           -> something_else
+end
